@@ -462,7 +462,7 @@ pre {
     /* background: linear-gradient(90deg,transprent,#000); */
     /* background: #000; */
     background-image: linear-gradient(90deg, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
-    animation: jadu 1s infinite linear;
+    animation: jadu 2s infinite linear;
   }
 
   @keyframes jadu {
@@ -473,7 +473,7 @@ pre {
     }
 
     100% {
-      left: 75%;
+      left: 76%;
 
 
     }
