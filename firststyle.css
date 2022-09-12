@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 @font-face {
   font-family: stan1;
   src: url(./CSS/fonts/font.ttf);
 }
+
 @font-face {
   font-family: stan2;
   src: url(./CSS/fonts/font2.ttf);
 }
-:root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
-  --dark-color: #002240;
-  --light-color: #f4f4f4;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
-}
 
-
-#main{
+#main {
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   min-height: auto;
 }
@@ -74,8 +69,8 @@ pre {
 /* Navbar */
 .navbar {
   /* background-color: var(--primary-color); */
-background-color: #00DBDE;
-background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
   color: #fff;
   height: 70px;
@@ -99,35 +94,39 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 .navbar .flex {
   justify-content: space-between;
 }
-.navbar>#jadu{
+
+.navbar>#jadu {
 
   position: absolute;
   z-index: 99999999999;
-  height: 2px ;
+  height: 2px;
   width: 25px;
   left: 0;
   border-radius: 100px;
 
   /* background: linear-gradient(90deg,transprent,#000); */
   /* background: #000; */
-  background-image: linear-gradient(90deg , #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
-  animation: jadu 2s infinite linear ;
+  background-image: linear-gradient(90deg, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+  animation: jadu 2s infinite linear;
 }
-@keyframes jadu{
-  0%{
+
+@keyframes jadu {
+  0% {
     left: 0;
     transform: translate(-100%);
 
 
   }
-  100%{
+
+  100% {
     left: 100%;
     transform: translate(0%);
 
 
   }
 }
-.logo{
+
+.logo {
   font-weight: 100;
   /* font-size: 1.5vw; */
   font-family: stan1;
@@ -233,7 +232,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   grid-template-rows: repeat(2, 1fr);
 }
 
-.cli .grid > *:first-child {
+.cli .grid>*:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
@@ -276,7 +275,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   justify-self: flex-end;
 }
 
-.features-main .card > i {
+.features-main .card>i {
   margin-right: 20px;
 }
 
@@ -284,11 +283,11 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
   padding: 30px;
 }
 
-.features-main .grid > *:first-child {
+.features-main .grid>*:first-child {
   grid-column: 1 / span 3;
 }
 
-.features-main .grid > *:nth-child(2) {
+.features-main .grid>*:nth-child(2) {
   grid-column: 1 / span 2;
 }
 
@@ -327,7 +326,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
 .fa-instagram:hover {
-  color:#B91372;
+  color: #B91372;
 }
 
 .fa-twitter:hover {
@@ -377,6 +376,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
 /* Tablets and under */
 @media (max-width: 768px) {
+
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -404,7 +404,7 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     animation: slideInFromBottom 1s ease-in;
   }
 
-  .cli .grid > *:first-child {
+  .cli .grid>*:first-child {
     grid-column: 1;
     grid-row: 1;
   }
@@ -421,8 +421,8 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     justify-self: center;
   }
 
-  .features-main .grid > *:first-child,
-  .features-main .grid > *:nth-child(2) {
+  .features-main .grid>*:first-child,
+  .features-main .grid>*:nth-child(2) {
     grid-column: 1;
   }
 }
@@ -441,31 +441,33 @@ background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   .showcase-form {
     width: 300px;
   }
 
-  .navbar>#jadu{
+  .navbar>#jadu {
 
     left: 20;
     border-radius: 100px;
-  
+
     /* background: linear-gradient(90deg,transprent,#000); */
     /* background: #000; */
-    background-image: linear-gradient(90deg , #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
-    animation: jadu 1s infinite linear ;
+    background-image: linear-gradient(90deg, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    animation: jadu 1s infinite linear;
   }
-  @keyframes jadu{
-    0%{
+
+  @keyframes jadu {
+    0% {
       left: 20;
-  
-  
+
+
     }
-    100%{
+
+    100% {
       left: 75%;
-  
-  
+
+
     }
   }
 
